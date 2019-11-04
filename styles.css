@@ -1,0 +1,70 @@
+             BODY {
+                 margin:0;
+                 font-size:80%;
+             }
+         
+             .marco {
+                 width:1000px;
+                 margin:10px auto 10px auto; /* Centrado horizontal */
+             }
+ 
+             .cabecera {
+                 border:solid red 1px;
+                 background-color: rgb(167, 167, 167);
+                 padding:10px;
+             }
+
+             .cuerpo {
+                 padding:10px 0 10px 0;
+                 overflow-x:hidden;
+                 overflow-y:auto; /* Hace que se ajuste a la columna más alta en ff */
+              height:100%; /* Hace que se ajuste a la columna más alta  en ie6 */
+             }
+            .historia{
+                text-align: left;
+                color: blue;
+            }
+            [data-azucar]{
+                color: black;
+                background-color: rgb(141, 141, 141);
+
+            }
+            [data-cantidad="300g"]{
+                color: red;
+            }
+            [data-vegetal] {
+                color: green;
+              }
+              /* Todos los elementos que tengan el atributo data-vegetal al valor Caldo de verduras tendrán otro color verde */
+            [data-vegetal="Caldo de verduras"] {
+                background-color: #0f0;
+              }
+             .columna_derecha {
+                float:right; /* Alineación a la derecha */
+                width:300px;
+                border:solid lightblue 1px;
+                padding:10px;
+            }
+
+            .columna_izquierda {
+                float:left; /* Alineación a la izquierda */
+                width:170px;
+                border:solid lightblue 1px;
+               padding:10px;
+            }
+
+            .columna_central {
+                float:left;
+                width:650px;
+                /*margin-left:200px; /* Espacio para la columna izquierda */
+                /*margin-right:300px; /* Espacio para la columna derecha */
+                border:solid navy 1px;
+                padding:10px;
+            }
+
+             .pie {
+                 border:solid orange 1px;
+                 padding:10px;
+                 text-align:center;
+                 font-size:80%;
+             }
